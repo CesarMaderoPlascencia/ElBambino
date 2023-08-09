@@ -72,4 +72,11 @@ class UserController extends Controller
 
         return redirect()->route('user.index')->with('success', 'Usuario creado exitosamente.');
     }
+
+    public function lista()
+    {
+        $usuarios = User::with('data')->get();
+        
+        return view('User.list', compact('usuarios'));
+    }
 }
