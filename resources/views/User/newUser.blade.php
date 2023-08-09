@@ -5,9 +5,10 @@
 @endsection
 
 @section('contenido')
-<form action="">
+<form method="POST" action="{{ route('user.ingresar') }}">
+    @csrf
    <div class="flex flex-col justify-center gap-10 items-center">
-        <div class="flex flex-col justify-center items-center w-4/6 border-2 border-green-500 mt-4 bg-gradient-to-br from-gray-300 to-green-100">
+        <div class="flex flex-col justify-center items-center w-4/6 border-2 border-green-500 mt-12 bg-white shadow-lg rounded-lg">
             
             <div class="font-bold text-3xl mt-4">Agregar Nuevo Bambino</div>
         
@@ -21,7 +22,7 @@
                 <div class="flex flex-col justify-start items-star">
                     <label for="email" class="font-bold">Correo electronico</label>
                     <input type="email" name="email" id="email" placeholder="Correo electrónico"
-                            class="border-2 border-green-400 rounded-lg h-10 w-64 px-2" required>
+                            class="border-2 border-green-400 rounded-lg h-10 w-64 px-2">
                 </div>
 
                 <div class="flex flex-col justify-start items-star">
@@ -73,12 +74,13 @@
                 </div>
 
                 <div class="flex flex-col justify-start items-star">
-                    <label for="tel" class="font-bold">Telefono</label>
-                    <select type="tel" name="tel" id="tel" 
+                    <label for="puesto" class="font-bold">Puesto</label>
+                    <select name="puesto" id="puesto" 
                             class="border-2 border-green-400 rounded-lg h-10 w-64 px-2" required>
-                            <option value="Oficina">Oficina</option>
-                            <option value="Supervisor">Supervisor</option>
-                            <option value="Ventas">Ventas</option>
+                            @foreach ($roles as $rol)
+                                <option value="{{ $rol->name }}">{{ $rol->name }}</option>
+                            @endforeach
+                            
                     </select>
                 </div>
 

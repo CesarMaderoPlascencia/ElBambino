@@ -28,4 +28,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/index', [IndexController::class, 'index'])->name('index');
     Route::get('/index/users', [UserController::class, 'indexUser'])->name('user.index');
     Route::get('/index/newuser', [UserController::class, 'newUser'])->name('user.new');
+    Route::post('/index/ingresar', [UserController::class, 'ingresar'])->name('user.ingresar');
 });
