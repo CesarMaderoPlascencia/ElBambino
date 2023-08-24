@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\SellerController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\VentaController;
+use App\Http\Controllers\SellerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/usuarios/nuevo', [UserController::class, 'newUser'])->name('user.new');
     Route::post('/usuarios/ingresar', [UserController::class, 'ingresar'])->name('user.ingresar');
     Route::get('/usuarios/lista', [UserController::class, 'lista'])->name('user.lista');
+
+    //Ventas
+    Route::get('/ventas', [VentaController::class, 'indexVentas'])->name('ventas.index');
+    Route::get('/ventas/nuevo', [VentaController::class, 'nuevaVenta'])->name('ventas.nuevo');
 });
