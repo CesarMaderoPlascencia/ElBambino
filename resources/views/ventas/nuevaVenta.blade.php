@@ -135,46 +135,49 @@
 
                     <div class="grid grid-cols-3">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2 ml-2">7</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="baja_siete" class=" text-center font-bold mr-2 ml-2">7</label>
+                            <input type="number" id="baja_siete" name="baja_siete" oninput="calcularPiezas()" 
+                                class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_baja_siete">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_baja_siete">0</div> </div>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 mt-3">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2">10</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="baja_diez" class=" text-center font-bold mr-2">10</label>
+                            <input type="number" id="baja_diez" name="baja_diez" oninput="calcularPiezas()"
+                                 class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_baja_diez">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_baja_diez">0</div> </div>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 mt-3 mb-2">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2">15</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="baja_quince" class=" text-center font-bold mr-2">15</label>
+                            <input type="number" id="baja_quince" name="baja_quince" oninput="calcularPiezas()"
+                                 class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_baja_quince">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_baja_quince">0</div> </div>
                         </div>
                     </div>
 
@@ -191,46 +194,49 @@
 
                     <div class="grid grid-cols-3">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2 ml-2">7</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="alta_siete" class=" text-center font-bold mr-2 ml-2">7</label>
+                            <input type="number" id="alta_siete" name="alta_siete" oninput="calcularPiezas()"
+                                 class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_alta_siete">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_alta_siete">0</div> </div>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 mt-3">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2">10</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="alta_diez" class=" text-center font-bold mr-2">10</label>
+                            <input type="number" id="alta_diez" name="alta_diez" oninput="calcularPiezas()" 
+                                class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_alta_diez">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_alta_diez">0</div> </div>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 mt-3 mb-2">
                         <div class="flex justify-center align-middle items-center">
-                            <label for="" class=" text-center font-bold mr-2">15</label>
-                            <input type="number" class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
+                            <label for="alta_quince" class=" text-center font-bold mr-2">15</label>
+                            <input type="number" id="alta_quince" name="alta_quince" oninput="calcularPiezas()" 
+                                class="rounded border w-20 border-green-400 hover:border-green-700 px-2">
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Piezas</div>
-                            <div class="text-center font-bold mr-2">0</div>
+                            <div class="text-center font-bold mr-2" id="piezas_alta_quince">0</div>
                         </div>
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_alta_quince">0</div> </div>
                         </div>
                     </div>
 
@@ -247,44 +253,48 @@
 
                     <div class="flex justify-around mt-3">
                         <div class="flex justify-center">
-                            <label for="" class=" text-center font-bold mr-2 ml-2">7</label>
-                            <input type="number" class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
+                            <label for="extra_siete" class=" text-center font-bold mr-2 ml-2">7</label>
+                            <input type="number" id="extra_siete" name="extra_siete" oninput="calcularPiezas()" 
+                                class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
                         </div>
 
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_extra_siete">0</div> </div>
                         </div>
                     </div>
 
                     <div class="flex justify-around mt-3">
                         <div class="flex justify-center">
-                            <label for="" class=" text-center font-bold mr-2">10</label>
-                            <input type="number" class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
+                            <label for="extra_diez" class=" text-center font-bold mr-2">10</label>
+                            <input type="number" id="extra_diez" name="extra_diez" oninput="calcularPiezas()" 
+                                class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
                         </div>
 
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_extra_diez">0</div> </div>
                         </div>
                     </div>
 
                     <div class="flex justify-around mt-3">
                         <div class="flex justify-center">
-                            <label for="" class=" text-center font-bold mr-2">15</label>
-                            <input type="number" class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
+                            <label for="extra_quince" class=" text-center font-bold mr-2">15</label>
+                            <input type="number" id="extra_quince" name="extra_quince" oninput="calcularPiezas()" 
+                                class="rounded border w-40 border-green-400 hover:border-green-700 px-2">
                         </div>
 
                         <div class="flex justify-center align-middle items-center">
                             <div class="text-center font-bold mr-2">Valor</div>
-                            <div class="text-center font-bold mr-2 flex">$ <div>0</div> </div>
+                            <div class="text-center font-bold mr-2 flex">$ <div id="valor_extra_quince">0</div> </div>
                         </div>
                     </div>
 
                     <div class="flex justify-around mt-3 mb-2">
                         <div class="flex flex-col justify-center">
-                            <label for="" class=" text-center font-bold mr-4">Dinero Extra</label>
-                            <input type="number" class="rounded border w-64 border-green-400 hover:border-green-700 px-2">
+                            <label for="valor_extra_dinero" class=" text-center font-bold mr-4">Dinero Extra</label>
+                            <input type="number" id="valor_extra_dinero" name="valor_extra_dinero" oninput="calcularPiezas()" 
+                                class="rounded border w-64 border-green-400 hover:border-green-700 px-2">
                         </div>
                     </div>
 
