@@ -10,9 +10,15 @@ class UserData extends Model
     use HasFactory;
 
     protected $fillable = [
-        'numero',
-        'semana',
-        'dia',
+        'usuario_id',
+        'nombre',
+        'paterno',
+        'materno',
+        'fecha_nacimiento',
+        'direccion',
+        'telefono',
+        'fecha_ingreso',
+        'puesto',
     ];
 
     public function user()

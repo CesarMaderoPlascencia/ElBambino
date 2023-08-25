@@ -13,10 +13,14 @@ return new class extends Migration
     {
         Schema::create('rutas', function (Blueprint $table) {
             $table->id();
-            $table->string('numero');
+            $table->string('nombre');
             $table->string('semana');
             $table->string('dia');
+            $table->unsignedBigInteger('id_vendedor');
             $table->timestamps();
+
+            $table->unique(['nombre', 'semana', 'dia']);
+            $table->foreign('id_vendedor')->references('id')->on('users');
         });
     }
 

@@ -9,14 +9,14 @@ class Ruta extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'usuario_id',
         'nombre',
-        'paterno',
-        'materno',
-        'fecha_nacimiento',
-        'direccion',
-        'telefono',
-        'fecha_ingreso',
-        'puesto',
+        'semana',
+        'dia',
+        'id_vendedor',
     ];
+
+    public function vendedor()
+    {
+        return $this->belongsTo(User::class, 'id_vendedor');
+    }
 }
