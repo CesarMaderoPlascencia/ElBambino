@@ -1,9 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\VentaController;
 use App\Http\Controllers\SellerController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\RutaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,10 +35,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/usuarios/nuevo', [UserController::class, 'newUser'])->name('user.new');
     Route::post('/usuarios/ingresar', [UserController::class, 'ingresar'])->name('user.ingresar');
     Route::get('/usuarios/lista', [UserController::class, 'lista'])->name('user.lista');
-
-    //Rutas y Clientes
-    Route::get('/rutas', [RutaController::class, 'index'])->name('rutas.index');
-    Route::get('/rutas/nuevo', [RutaController::class, 'nuevaRuta'])->name('rutas.nuevo');
-    Route::post('/rutas/ingresar', [RutaController::class, 'ingresar'])->name('rutas.ingresar');
-    Route::get('/rutas/clientes', [RutaController::class, 'clientes'])->name('rutas.clientes');
 });
