@@ -50,4 +50,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(UserData::class, 'usuario_id');
     }
+
+    public function ruta()
+    {
+        return $this->hasMany(Ruta::class, 'id');
+    }
 }

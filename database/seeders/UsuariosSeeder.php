@@ -32,7 +32,7 @@ class UsuariosSeeder extends Seeder
         $userData->direccion = 'Oasis #207 int 41';
         $userData->telefono = '3321064773';
         $userData->fecha_ingreso = '2023-06-16';
-        $userData->puesto = 'Administrador';
+        $userData->puesto = 'Admin';
         $userData->save();
     }
 }
